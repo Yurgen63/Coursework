@@ -15,7 +15,7 @@ public class Main {
                 new Employee("Биткин", "Анатолий", "Александрович", 1, 390),
                 new Employee("Белоусов", "Александр", "Александрович", 2, 280),
                 new Employee("Петрунин", "Евгений", "Александрович", 3, 180),
-                new Employee("Пазухин", "Михаил", "Константинович", 4, 130),
+                new Employee("Пазухин", "Михаил", "Константинович", 4, 190),
                 new Employee("Чичкин", "Сергей", "Александрович", 5, 450),
                 new Employee(" Нестеров", "Сергей", "Николаевич", 3, 420),
         };
@@ -46,8 +46,8 @@ public class Main {
         book.listAllEmployees();
 
         printSeparator();
-        System.out.println(" Первый сотрудник отдела 5 с зарплатой > 320");
-        book.findFirstEmployee(5, 320);
+        System.out.println(" Первый сотрудник отдела 3 с зарплатой > 90");
+        book.findFirstEmployee(4, 180);
 
         printSeparator();
         System.out.println(" Первые 4 сотрудника с зарплатой < 290");

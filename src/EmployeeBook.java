@@ -31,8 +31,11 @@ public class EmployeeBook {
     }
 
     public void printTax(String type) {
-        if (type == null) type = "PROPORTIONAL";
-        String t = type;
+        if (type == null) {
+            type = "PROPORTIONAL";
+        }
+        final String t = type;
+
         for (Employee e : employees) {
             if (e == null) continue;
             double tax;
@@ -54,9 +57,15 @@ public class EmployeeBook {
 
     public void indexSalary(int department, int percent) {
         for (Employee e : employees) {
-            if (e == null) continue;
-            if (percent == 0) continue;
-            if (e.getDepartment() != department) continue;
+            if (e == null) {
+                continue;
+            }
+            if (percent == 0) {
+                continue;
+            }
+            if (e.getDepartment() != department) {
+                continue;
+            }
             int current = e.getSalary();
             int change = (current * percent) / 100;
             e.setSalary(current + change);
@@ -67,7 +76,7 @@ public class EmployeeBook {
         for (int i = 0; i < employees.length; i++) {
             Employee e = employees[i];
             if (e != null && e.getDepartment() == department && e.getSalary() > minSalary) {
-                System.out.print(" Порядковый номер: " + (i + 1) + " - ");
+                System.out.print("Порядковый номер: " + (i + 1) + " — ");
                 e.printShortInfo();
                 break;
             }
