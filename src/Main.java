@@ -47,7 +47,7 @@ public class Main {
 
         printSeparator();
         System.out.println(" Первый сотрудник отдела 3 с зарплатой > 90");
-        book.findFirstEmployee(4, 180);
+        book.findFirstEmployeeDeptSalary(4, 180);
 
         printSeparator();
         System.out.println(" Первые 4 сотрудника с зарплатой < 290");
