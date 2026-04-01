@@ -72,7 +72,7 @@ public class EmployeeBook {
         }
     }
 
-    public void findFirstEmployee(int department, int minSalary) {
+    public void printFirstEmployeeDeptSalary(int department, int minSalary) {
         for (int i = 0; i < employees.length; i++) {
             Employee e = employees[i];
             if (e != null && e.getDepartment() == department && e.getSalary() > minSalary) {
